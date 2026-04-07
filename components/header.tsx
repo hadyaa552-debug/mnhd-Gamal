@@ -1,0 +1,56 @@
+"use client"
+import { useState, useEffect } from "react"
+import { Phone } from "lucide-react"
+
+const navItems = [
+  { name: "سراي", id: "sarai" },
+  { name: "تاج سيتي", id: "tajcity" },
+  { name: "باترفلاي", id: "butterfly" },
+  { name: "عن مدينة مصر", id: "about" },
+  { name: "تواصل معنا", id: "contact" },
+]
+
+export default function Header() {
+  const [scrolled, setScrolled] = useState(false)
+  useEffect(() => {
+    const fn = () => setScrolled(window.scrollY > 50)
+    window.addEventListener("scroll", fn)
+    return () => window.removeEventListener("scroll", fn)
+  }, [])
+
+  const scrollTo = (e: React.MouseEvent<HTMLAnchorElement>, id: string) => {
+    e.preventDefault()
+    document.getElementById(id)?.scrollIntoView({ behavior: "smooth", block: "start" })
+  }
+
+  return (
+    <header className={`fixed top-0 inset-x-0 z-50 transition-all duration-500 ${scrolled ? "bg-white/98 backdrop-blur-lg shadow-sm border-b border-border" : "bg-white/95 backdrop-blur-md shadow-sm"}`}>
+      <div className="container mx-auto px-4 lg:px-8 h-16 lg:h-20 flex items-center justify-between">
+        {/* Logo */}
+        <div className="flex flex-col items-start">
+          <span className="text-lg font-black tracking-wide text-primary">مدينة مصر</span>
+          <span className="text-xs text-muted-foreground tracking-widest">MNHD</span>
+        </div>
+
+        <nav className="hidden lg:flex items-center gap-8">
+          {navItems.map((item) => (
+            <a key={item.id} href={`#${item.id}`} onClick={(e) => scrollTo(e, item.id)}
+              className="text-sm text-foreground/70 hover:text-primary transition-colors font-medium">
+              {item.name}
+            </a>
+          ))}
+        </nav>
+
+        <div className="flex items-center gap-3">
+          <div className="flex flex-col items-end hidden sm:flex">
+            <span className="text-xs text-muted-foreground">للاستفسار والحجز</span>
+            <a href="tel:+201119770408" className="text-base font-bold text-primary hover:underline" dir="ltr">01119770408</a>
+          </div>
+          <a href="tel:+201119770408" className="sm:hidden bg-primary text-primary-foreground p-2.5">
+            <Phone className="w-5 h-5" />
+          </a>
+        </div>
+      </div>
+    </header>
+  )
+}
