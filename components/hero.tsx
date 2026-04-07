@@ -11,8 +11,8 @@ export default function Hero() {
       <div className="absolute inset-0">
         <img src="https://prod-images.nawy.com/processed/compound_image/image/7185/default.webp"
           alt="سراي مدينة مصر" className="w-full h-full object-cover" />
-        <div className="absolute inset-0 bg-gradient-to-l from-white/95 via-white/60 to-white/20" />
-        <div className="absolute inset-0 bg-white/30" />
+        <div className="absolute inset-0 bg-gradient-to-l from-white/85 via-white/40 to-white/10" />
+        <div className="absolute inset-0 bg-white/15" />
       </div>
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 lg:px-8 w-full pt-20 pb-12">
@@ -20,9 +20,9 @@ export default function Hero() {
           <div className={`text-right space-y-6 transition-all duration-1000 ${visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}>
             <div>
               <p className="text-primary font-bold tracking-widest text-sm uppercase mb-3">مدينة مصر للإسكان والتعمير</p>
-              <h1 className="text-5xl lg:text-7xl font-black text-foreground leading-none mb-3">
+              <h1 className="text-4xl lg:text-5xl font-black text-foreground leading-tight mb-3">
                 سراي<br/>
-                <span className="text-primary text-3xl lg:text-4xl font-bold">تاج سيتي • باترفلاي</span>
+                <span className="text-primary text-2xl lg:text-3xl font-bold">تاج سيتي • باترفلاي</span>
               </h1>
             </div>
             <p className="text-muted-foreground text-base leading-relaxed max-w-lg mr-auto lg:mr-0">
