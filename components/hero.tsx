@@ -7,7 +7,7 @@ export default function Hero() {
   useEffect(() => { setVisible(true) }, [])
 
   return (
-    <section className="relative min-h-screen flex items-center overflow-hidden">
+    <section className="relative flex items-center overflow-hidden" style={{minHeight: "calc(100vh - 0px)"}}>
       <div className="absolute inset-0">
         <img src="https://prod-images.nawy.com/processed/compound_image/image/7185/default.webp"
           alt="سراي مدينة مصر" className="w-full h-full object-cover" />
@@ -16,7 +16,7 @@ export default function Hero() {
       </div>
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 lg:px-8 w-full pt-20 pb-12">
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
+        <div className="grid lg:grid-cols-2 gap-12 items-center min-h-[600px]">
           <div className={`text-right space-y-6 transition-all duration-1000 ${visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}>
             <div>
               <p className="text-primary font-bold tracking-widest text-sm uppercase mb-3">مدينة مصر للإسكان والتعمير</p>

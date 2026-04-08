@@ -6,6 +6,7 @@ const navItems = [
   { name: "سراي", id: "sarai" },
   { name: "تاج سيتي", id: "tajcity" },
   { name: "باترفلاي", id: "butterfly" },
+  { name: "تلالا", id: "talala" },
   { name: "عن مدينة مصر", id: "about" },
   { name: "تواصل معنا", id: "contact" },
 ]

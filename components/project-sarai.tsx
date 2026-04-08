@@ -41,7 +41,12 @@ export default function ProjectSarai() {
         <div className="mb-10">
           <h3 className="text-2xl font-bold text-foreground mb-6 text-center">معرض الصور</h3>
           <div className="grid grid-cols-3 gap-3">
-            sarai2
+            {[7185, 7184, 7179, 7180, 7178, 1422].map((id, i) => (
+              <div key={i} className="relative aspect-[4/3] overflow-hidden">
+                <img src={`https://prod-images.nawy.com/processed/compound_image/image/${id}/default.webp`}
+                  alt={`سراي ${i + 1}`} className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
+              </div>
+            ))}
           </div>
         </div>
 
