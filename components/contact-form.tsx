@@ -52,8 +52,8 @@ export default function ContactForm({ compact = false }: { compact?: boolean }) 
             onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
             required className="text-right h-11" dir="ltr" />
           <Select value={formData.project} onValueChange={(v) => setFormData({ ...formData, project: v })}>
-            <SelectTrigger className="h-11 text-right w-full bg-white border border-input text-foreground font-medium">
-              <SelectValue placeholder="المشروع المهتم به *" className="text-foreground" />
+            <SelectTrigger className="h-11 text-right w-full">
+              <SelectValue placeholder="المشروع المهتم به *" />
             </SelectTrigger>
             <SelectContent>
               <SelectItem value="sarai">سراي – القاهرة الجديدة</SelectItem>
