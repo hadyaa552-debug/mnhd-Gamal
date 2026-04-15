@@ -39,8 +39,9 @@ export default function ProjectTajCity() {
               { label: "الموقع", value: "أمام JW Marriott – القاهرة الجديدة" },
               { label: "الوحدات", value: "شقق • بنتهاوس • فيلات • توين هاوس" },
               { label: "قريب من", value: "Ring Road مباشرة • مطار القاهرة ١٨ دقيقة" },
-              { label: "السداد", value: "٥٪ مقدم | تقسيط ٨ سنوات" },
+              { label: "السداد", value: "٥٪ مقدم | تقسيط ١٠ سنوات" },
               { label: "المميزات", value: "Taj Mall • Asten College • Klub Kayan" },
+              { label: "الأسعار", value: "تبدأ من ١٠ مليون جنيه" },
             ].map((item, i) => (
               <div key={i} className="flex items-center justify-between py-3 border-b border-border">
                 <span className="text-primary font-semibold">{item.value}</span>

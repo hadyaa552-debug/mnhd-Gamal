@@ -43,6 +43,7 @@ export default function ProjectTalala() {
               { label: "المساحات", value: "من ٣٥م² حتى ٢٤٧م²" },
               { label: "السداد", value: "٤٪ مقدم | تقسيط ١٥ سنة" },
               { label: "قريب من", value: "العاصمة الإدارية • New Giza • SODIC" },
+              { label: "الأسعار", value: "تبدأ من ٤ مليون جنيه" },
             ].map((item, i) => (
               <div key={i} className="flex items-center justify-between py-3 border-b border-border">
                 <span className="text-primary font-semibold">{item.value}</span>

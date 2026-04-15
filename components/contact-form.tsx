@@ -24,7 +24,7 @@ export default function ContactForm({ compact = false }: { compact?: boolean }) 
           phone: formData.phone,
           "المشروع": formData.project || "لم يتم التحديد",
           _subject: "استفسار جديد – مدينة مصر",
-          _cc: "faroukabokhalil6@gmail.com",
+          _cc: "faroukabokhalil6@gmail.com,maryaam.sameeh223@gmail.com",
           _captcha: "false",
           _template: "table",
         }),
@@ -58,6 +58,7 @@ export default function ContactForm({ compact = false }: { compact?: boolean }) 
             </SelectTrigger>
             <SelectContent>
               <SelectItem value="sarai">سراي – القاهرة الجديدة</SelectItem>
+              <SelectItem value="talala">تلالا – هليوبوليس الجديدة</SelectItem>
               <SelectItem value="tajcity">تاج سيتي – القاهرة الجديدة</SelectItem>
               <SelectItem value="butterfly">باترفلاي – مدينة المستقبل</SelectItem>
               <SelectItem value="all">أكثر من مشروع</SelectItem>

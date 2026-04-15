@@ -1,9 +1,9 @@
 import Header from "@/components/header"
 import Hero from "@/components/hero"
 import ProjectSarai from "@/components/project-sarai"
+import ProjectTalala from "@/components/project-talala"
 import ProjectTajCity from "@/components/project-tajcity"
 import ProjectButterfly from "@/components/project-butterfly"
-import ProjectTalala from "@/components/project-talala"
 import AboutDeveloper from "@/components/about-developer"
 import ContactForm from "@/components/contact-form"
 import WhatsAppWidget from "@/components/whatsapp-widget"
@@ -16,9 +16,9 @@ export default function Home() {
       <Header />
       <Hero />
       <ProjectSarai />
+      <ProjectTalala />
       <ProjectTajCity />
       <ProjectButterfly />
-      <ProjectTalala />
       <AboutDeveloper />
 
       <section id="contact" className="py-16 lg:py-24 bg-muted/20">
@@ -26,7 +26,7 @@ export default function Home() {
           <div className="text-center mb-10">
             <p className="text-primary font-bold tracking-widest uppercase text-sm mb-3">تواصل معنا</p>
             <h2 className="text-3xl md:text-4xl font-black text-foreground mb-4">نحن هنا لمساعدتك</h2>
-            <p className="text-muted-foreground">سجل اهتمامك وسيتواصل معك فريقنا في أقرب وقت</p>
+            <p className="text-muted-foreground text-sm">سجل اهتمامك وسيتواصل معك فريقنا في أقرب وقت</p>
           </div>
           <div className="grid lg:grid-cols-2 gap-12 items-start">
             <div className="text-right space-y-4">
@@ -34,9 +34,9 @@ export default function Home() {
               <div className="space-y-0">
                 {[
                   { name: "سراي", loc: "القاهرة الجديدة – طريق القاهرة السويس" },
+                  { name: "تلالا", loc: "هليوبوليس الجديدة – شرق القاهرة" },
                   { name: "تاج سيتي", loc: "القاهرة الجديدة – أمام JW Marriott" },
                   { name: "باترفلاي", loc: "مدينة المستقبل" },
-                  { name: "تلالا", loc: "هليوبوليس الجديدة – شرق القاهرة" },
                 ].map((p, i) => (
                   <div key={i} className="flex items-center gap-3 py-3 border-b border-border">
                     <div>
