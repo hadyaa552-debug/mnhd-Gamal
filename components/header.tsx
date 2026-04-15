@@ -26,7 +26,7 @@ export default function Header() {
 
   return (
     <header className={`fixed top-0 inset-x-0 z-50 transition-all duration-500 ${scrolled ? "bg-white/98 backdrop-blur-lg shadow-sm border-b border-border" : "bg-white/95 backdrop-blur-md shadow-sm"}`}>
-      <div className="container mx-auto px-4 lg:px-8 h-16 lg:h-20 flex items-center justify-between">
+      <div className="max-w-7xl mx-auto px-6 lg:px-8 h-16 lg:h-20 flex items-center justify-between">
         {/* Logo */}
         <div className="flex flex-col items-start">
           <span className="text-lg font-black tracking-wide text-primary">مدينة مصر</span>

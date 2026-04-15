@@ -22,7 +22,7 @@ export default function Home() {
       <AboutDeveloper />
 
       <section id="contact" className="py-16 lg:py-24 bg-muted/20">
-        <div className="container mx-auto px-4 lg:px-8 max-w-5xl">
+        <div className="max-w-5xl mx-auto px-6 lg:px-8">
           <div className="text-center mb-10">
             <p className="text-primary font-bold tracking-widest uppercase text-sm mb-3">تواصل معنا</p>
             <h2 className="text-3xl md:text-4xl font-black text-foreground mb-4">نحن هنا لمساعدتك</h2>

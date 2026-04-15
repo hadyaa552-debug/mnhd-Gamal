@@ -9,7 +9,7 @@ export default function AboutDeveloper() {
   ]
   return (
     <section id="about" className="py-20 lg:py-32 bg-muted/20">
-      <div className="container mx-auto px-4 lg:px-8">
+      <div className="max-w-7xl mx-auto px-6 lg:px-8">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-black text-foreground mb-6">مدينة مصر للإسكان والتعمير</h2>
