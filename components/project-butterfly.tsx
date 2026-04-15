@@ -26,7 +26,7 @@ export default function ProjectButterfly() {
           <div className="text-right space-y-4">
             <p className="text-lg text-muted-foreground leading-relaxed">The Butterfly كمبوند سكني راقٍ من مدينة مصر في مدينة المستقبل على ٢٧ فداناً أمام سراي مباشرةً. يتميز بالمساحات الخضراء الواسعة وبحيرات مائية تغطي الجزء الأكبر من المشروع. خيار مثالي لمن يبحث عن خصوصية وطبيعة داخل مجتمع سكني متكامل.</p>
             <div className="grid grid-cols-3 gap-4 pt-4 text-center">
-              {[{ v: "27", l: "فدان" }, { v: "80%", l: "مساحات خضراء" }, { v: "5", l: "دقائق للعاصمة" }].map((s, i) => (
+              {[{ v: "288", l: "فدان" }, { v: "80%", l: "مساحات خضراء" }, { v: "5", l: "دقائق للعاصمة" }].map((s, i) => (
                 <div key={i} className="bg-muted/30 p-5 border border-border">
                   <div className="text-3xl font-black text-primary mb-1">{s.v}</div>
                   <div className="text-xs text-muted-foreground">{s.l}</div>
