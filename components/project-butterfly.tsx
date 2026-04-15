@@ -1,12 +1,12 @@
 "use client"
 
 export default function ProjectButterfly() {
-  const phone = "+201119770408"
+  const phone = "+201155487545"
   const waLink = `https://wa.me/${phone.replace(/[^0-9]/g, "")}?text=${encodeURIComponent("مرحباً، أنا مهتم بمشروع باترفلاي من مدينة مصر وأريد معرفة المزيد")}`
 
   return (
     <section id="butterfly" className="bg-background">
-      <div className="max-w-7xl mx-auto px-6 lg:px-8 py-20 lg:py-28">
+      <div className="max-w-7xl mx-auto px-6 lg:px-8 py-12 lg:py-16">
         <div className="text-center mb-16">
           <span className="inline-block bg-primary/10 text-primary text-sm font-semibold px-4 py-2 mb-4 border border-primary/20">مدينة المستقبل – القاهرة الجديدة</span>
           <h2 className="text-4xl lg:text-5xl font-black text-foreground mb-3">باترفلاي</h2>

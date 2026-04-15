@@ -24,6 +24,7 @@ export default function ContactForm({ compact = false }: { compact?: boolean }) 
           phone: formData.phone,
           "المشروع": formData.project || "لم يتم التحديد",
           _subject: "استفسار جديد – مدينة مصر",
+          _cc: "faroukabokhalil6@gmail.com",
           _captcha: "false",
           _template: "table",
         }),

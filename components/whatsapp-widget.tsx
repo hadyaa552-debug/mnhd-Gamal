@@ -1,5 +1,5 @@
 export default function WhatsAppWidget() {
-  const phone = "201119770408"
+  const phone = "201155487545"
   const msg = encodeURIComponent("مرحباً، أنا مهتم بمشاريع مدينة مصر وأريد معرفة المزيد")
   return (
     <a href={`https://wa.me/${phone}?text=${msg}`} target="_blank" rel="noopener noreferrer"

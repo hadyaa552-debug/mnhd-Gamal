@@ -45,9 +45,9 @@ export default function Header() {
         <div className="flex items-center gap-3">
           <div className="flex flex-col items-end hidden sm:flex">
             <span className="text-xs text-muted-foreground">للاستفسار والحجز</span>
-            <a href="tel:+201119770408" className="text-base font-bold text-primary hover:underline" dir="ltr">01119770408</a>
+            <a href="tel:+201155487545" className="text-base font-bold text-primary hover:underline" dir="ltr">01155487545</a>
           </div>
-          <a href="tel:+201119770408" className="sm:hidden bg-primary text-primary-foreground p-2.5">
+          <a href="tel:+201155487545" className="sm:hidden bg-primary text-primary-foreground p-2.5">
             <Phone className="w-5 h-5" />
           </a>
         </div>

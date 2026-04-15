@@ -1,7 +1,7 @@
 "use client"
 
 export default function ProjectSarai() {
-  const phone = "+201119770408"
+  const phone = "+201155487545"
   const waLink = `https://wa.me/${phone.replace(/[^0-9]/g, "")}?text=${encodeURIComponent("مرحباً، أنا مهتم بمشروع سراي من مدينة مصر وأريد معرفة المزيد")}`
 
   const details = [
@@ -17,10 +17,10 @@ export default function ProjectSarai() {
 
   return (
     <section id="sarai" className="bg-background">
-      <div className="max-w-7xl mx-auto px-6 lg:px-8 py-20 lg:py-28">
+      <div className="max-w-7xl mx-auto px-6 lg:px-8 py-12 lg:py-16">
 
         {/* Header */}
-        <div className="text-center mb-14">
+        <div className="text-center mb-10">
           <span className="inline-block bg-primary/10 text-primary text-sm font-semibold px-4 py-2 mb-4 border border-primary/20">القاهرة الجديدة – طريق القاهرة السويس</span>
           <h2 className="text-4xl lg:text-5xl font-black text-foreground mb-3">سراي</h2>
           <p className="text-lg text-muted-foreground">مدينة مصر – مشروع متكامل على ٥.٥ مليون م²</p>
