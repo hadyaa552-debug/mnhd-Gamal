@@ -1,4 +1,6 @@
 import Header from "@/components/header"
+import AnnouncementBar from "@/components/announcement-bar"
+import PopupForm from "@/components/popup-form"
 import Hero from "@/components/hero"
 import ProjectSarai from "@/components/project-sarai"
 import ProjectTalala from "@/components/project-talala"
@@ -13,6 +15,8 @@ import Footer from "@/components/footer"
 export default function Home() {
   return (
     <main className="min-h-screen bg-background">
+      <AnnouncementBar />
+      <PopupForm />
       <Header />
       <Hero />
       <ProjectSarai />
